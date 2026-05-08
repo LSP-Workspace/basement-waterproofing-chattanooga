@@ -3,7 +3,7 @@
 <header class="sticky top-0 z-50 bg-[#132043] shadow-lg">
   <!-- Top bar with phone -->
   <div class="bg-[#0d1730] py-2">
-    <div class="max-w-7xl mx-auto px-4 flex justify-end">
+    <div class="max-w-7xl mx-auto px-4 flex justify-center">
       <a href="tel:8653702211" class="text-white text-sm font-semibold tracking-wide hover:text-[#2563eb] transition-colors">
         Call Us: (865) 370-2211
       </a>
@@ -91,45 +91,54 @@
   </nav>
 </header>
 
-<script>
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  const hamburgerIcon = document.getElementById('hamburger-icon');
-  const closeIcon = document.getElementById('close-icon');
+<script is:inline>
+  (function () {
+    var btn = document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    var hamburgerIcon = document.getElementById('hamburger-icon');
+    var closeIcon = document.getElementById('close-icon');
 
-  function closeMenu() {
-    menu?.classList.add('hidden');
-    btn?.setAttribute('aria-expanded', 'false');
-    hamburgerIcon?.classList.remove('hidden');
-    closeIcon?.classList.add('hidden');
-  }
-
-  function openMenu() {
-    menu?.classList.remove('hidden');
-    btn?.setAttribute('aria-expanded', 'true');
-    hamburgerIcon?.classList.add('hidden');
-    closeIcon?.classList.remove('hidden');
-  }
-
-  btn?.addEventListener('click', (e) => {
-    e.stopPropagation();
-    menu?.classList.contains('hidden') ? openMenu() : closeMenu();
-  });
-
-  // Close on click outside
-  document.addEventListener('click', (e) => {
-    if (!menu?.classList.contains('hidden') && !menu?.contains(e.target as Node) && !btn?.contains(e.target as Node)) {
-      closeMenu();
+    function closeMenu() {
+      if (menu) menu.classList.add('hidden');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+      if (hamburgerIcon) hamburgerIcon.classList.remove('hidden');
+      if (closeIcon) closeIcon.classList.add('hidden');
     }
-  });
 
-  // Close on scroll
-  window.addEventListener('scroll', () => {
-    if (!menu?.classList.contains('hidden')) closeMenu();
-  }, { passive: true });
+    function openMenu() {
+      if (menu) menu.classList.remove('hidden');
+      if (btn) btn.setAttribute('aria-expanded', 'true');
+      if (hamburgerIcon) hamburgerIcon.classList.add('hidden');
+      if (closeIcon) closeIcon.classList.remove('hidden');
+    }
 
-  // Close when a nav link is clicked
-  menu?.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', closeMenu);
-  });
+    if (btn) {
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        menu && menu.classList.contains('hidden') ? openMenu() : closeMenu();
+      });
+    }
+
+    // Close on click outside
+    document.addEventListener('click', function (e) {
+      if (menu && !menu.classList.contains('hidden')) {
+        var target = e.target;
+        if (!menu.contains(target) && !btn.contains(target)) {
+          closeMenu();
+        }
+      }
+    });
+
+    // Close on scroll
+    window.addEventListener('scroll', function () {
+      if (menu && !menu.classList.contains('hidden')) closeMenu();
+    }, { passive: true });
+
+    // Close when a nav link inside the menu is clicked
+    if (menu) {
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+    }
+  })();
 </script>
