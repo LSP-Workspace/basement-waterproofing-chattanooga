@@ -72,6 +72,9 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       phone,
       source: 'Website Contact Form',
       tags: ['website-lead'],
+      ...(message && {
+        customFields: [{ key: 'type_of_project', field_value: message }],
+      }),
     }),
   });
 
