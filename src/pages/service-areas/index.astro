@@ -34,61 +34,61 @@ const areas = [
     name: "Downtown Chattanooga",
     state: "TN",
     description: "Full residential and commercial waterproofing coverage in the heart of Chattanooga. Older homes and mixed-use buildings downtown often have aging foundations that benefit from both interior drainage systems and exterior membrane work.",
-    services: ["Basement Waterproofing", "Crawl Space Encapsulation", "Foundation Repair", "Mold Remediation"],
+    href: "/service-areas/basement-waterproofing-in-chattanooga-tn/",
   },
   {
     name: "Hixson",
     state: "TN",
     description: "Hixson's hillside lots and clay-heavy soil create real drainage challenges. We serve the entire Hixson community with foundation stabilization, sump pump systems, and crawl space moisture control.",
-    services: ["Foundation Repair", "Basement Waterproofing", "Crawl Space Encapsulation"],
+    href: "/service-areas/basement-waterproofing-in-hixson-tn/",
   },
   {
     name: "East Brainerd",
     state: "TN",
     description: "One of Chattanooga's fastest-growing neighborhoods. We work with homeowners and builders in East Brainerd on new-construction waterproofing, crawl space systems, and basement drainage.",
-    services: ["Basement Waterproofing", "Crawl Space Encapsulation", "Drainage Systems"],
+    href: "/service-areas/basement-waterproofing-in-east-brainerd-tn/",
   },
   {
     name: "Red Bank",
     state: "TN",
     description: "Red Bank homes frequently deal with moisture intrusion due to proximity to Stringers Ridge and local drainage patterns. Our team handles interior and exterior waterproofing across the area.",
-    services: ["Interior Waterproofing", "Exterior Waterproofing", "Mold Remediation"],
+    href: "/service-areas/basement-waterproofing-in-red-bank-tn/",
   },
   {
     name: "Soddy-Daisy",
     state: "TN",
     description: "Soddy-Daisy's rural terrain and seasonal heavy rains can saturate foundations quickly. We provide full waterproofing and mold remediation services to homeowners throughout the area.",
-    services: ["Basement Waterproofing", "Mold Remediation", "Sump Pump Installation"],
+    href: "/service-areas/basement-waterproofing-in-soddy-daisy-tn/",
   },
   {
     name: "East Ridge",
     state: "TN",
     description: "East Ridge's established neighborhoods include many homes with block foundation walls that are especially prone to water seepage. We specialize in block wall crack injection and interior drainage systems.",
-    services: ["Foundation Crack Repair", "Interior Drainage", "Crawl Space Encapsulation"],
+    href: "/service-areas/basement-waterproofing-in-east-ridge-tn/",
   },
   {
     name: "Signal Mountain",
     state: "TN",
     description: "Mountain terrain means water moves fast. Homes on Signal Mountain often deal with surface runoff entering basements and crawl spaces. We design drainage solutions built for steep-grade lots.",
-    services: ["Exterior Waterproofing", "Foundation Repair", "Drainage Systems"],
+    href: "/service-areas/basement-waterproofing-in-signal-mountain-tn/",
   },
   {
     name: "Ooltewah",
     state: "TN",
     description: "Ooltewah's newer subdivisions and older farmhouses alike can have moisture issues. We serve the full Ooltewah corridor with crawl space encapsulation, sump systems, and foundation repair.",
-    services: ["Crawl Space Encapsulation", "Sump Pump Installation", "Foundation Repair"],
+    href: null,
   },
   {
     name: "Ringgold",
     state: "GA",
     description: "Just across the state line, Ringgold homeowners get the same quality service and warranty coverage as our Tennessee customers. Water doesn't respect borders — neither do we.",
-    services: ["Basement Waterproofing", "Crawl Space Encapsulation", "Mold Remediation"],
+    href: null,
   },
   {
     name: "Fort Oglethorpe",
     state: "GA",
     description: "Fort Oglethorpe's historic homes often have aging masonry foundations that need specialized care. We bring the same expertise and warranty to every job south of the state line.",
-    services: ["Foundation Repair", "Interior Drainage", "Mold Remediation"],
+    href: null,
   },
 ];
 ---
@@ -121,30 +121,6 @@ const areas = [
       </div>
     </section>
 
-    <!-- Coverage Summary -->
-    <section class="bg-white border-b border-gray-100">
-      <div class="max-w-7xl mx-auto px-4 py-10">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div>
-            <p class="font-bold text-[#132043] text-lg">Chattanooga, TN</p>
-            <p class="text-gray-500 text-sm">Primary service area</p>
-          </div>
-          <div>
-            <p class="font-bold text-[#132043] text-lg">Hamilton County</p>
-            <p class="text-gray-500 text-sm">Full county coverage</p>
-          </div>
-          <div>
-            <p class="font-bold text-[#132043] text-lg">NW Georgia</p>
-            <p class="text-gray-500 text-sm">Ringgold, Fort Oglethorpe &amp; more</p>
-          </div>
-          <div>
-            <p class="font-bold text-[#132043] text-lg">Free Estimates</p>
-            <p class="text-gray-500 text-sm">For all covered areas</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Area Cards -->
     <section class="bg-gray-50 py-20">
       <div class="max-w-7xl mx-auto px-4">
@@ -157,17 +133,15 @@ const areas = [
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           {areas.map(area => (
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <div class="flex items-start justify-between gap-4 mb-4">
                 <h2 class="text-xl font-bold text-[#132043]">{area.name}</h2>
                 <span class="flex-shrink-0 text-xs font-bold text-[#2563eb] bg-blue-50 px-2.5 py-1 rounded-full">{area.state}</span>
               </div>
               <p class="text-gray-600 leading-relaxed mb-5 text-sm">{area.description}</p>
-              <div class="flex flex-wrap gap-2">
-                {area.services.map(s => (
-                  <span class="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full">{s}</span>
-                ))}
-              </div>
+              {area.href && (
+                <a href={area.href} class="text-[#2563eb] font-semibold hover:underline text-sm">Learn More &rarr;</a>
+              )}
             </div>
           ))}
         </div>
