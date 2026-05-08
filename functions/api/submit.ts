@@ -72,24 +72,41 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       phone,
       source: 'Website Contact Form',
       tags: ['website-lead'],
-      ...(message && {
-        customFields: [{ key: 'message', field_value: message }],
-      }),
     }),
   });
+
+  let contactId: string | null = null;
 
   if (ghlRes.status === 400) {
     const body = await ghlRes.json() as { message?: string; meta?: { contactId?: string } };
     if (body.message?.includes('duplicated') || body.meta?.contactId) {
-      return Response.json({ status: 'success' });
+      contactId = body.meta?.contactId || null;
+    } else {
+      console.error('[submit] GHL 400:', JSON.stringify(body));
+      return Response.json({ status: 'error', message: 'Submission failed' }, { status: 500 });
     }
-    console.error('[submit] GHL 400:', JSON.stringify(body));
-    return Response.json({ status: 'error', message: 'Submission failed' }, { status: 500 });
-  }
-
-  if (!ghlRes.ok) {
+  } else if (!ghlRes.ok) {
     console.error('[submit] GHL error:', ghlRes.status);
     return Response.json({ status: 'error', message: 'Submission failed' }, { status: 500 });
+  } else {
+    const ghlBody = await ghlRes.json() as { contact?: { id?: string } };
+    contactId = ghlBody.contact?.id || null;
+  }
+
+  // Post project description as a contact note so it's visible in GHL + Slack
+  if (message && contactId) {
+    await fetch(`https://services.leadconnectorhq.com/contacts/${contactId}/notes`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${env.GHL_API_KEY}`,
+        'Version': '2021-07-28',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        userId: contactId,
+        body: `Website Inquiry:\n${message}`,
+      }),
+    });
   }
 
   return Response.json({ status: 'success' });
