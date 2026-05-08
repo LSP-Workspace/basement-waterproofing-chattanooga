@@ -1,0 +1,198 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Basement Waterproofing Chattanooga",
+  "telephone": "+18653702211",
+  "url": "https://basementwaterproofingchattanooga.com/faq/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chattanooga",
+    "addressRegion": "TN",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
+};
+---
+<BaseLayout
+  title="FAQ | Basement Waterproofing Chattanooga"
+  description="Frequently asked questions about basement waterproofing, crawl space encapsulation, mold remediation, and foundation repair in Chattanooga, TN."
+  schema={schema}
+>
+  <Header />
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="bg-[#132043] min-h-[30dvh] flex items-center">
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 py-12 flex justify-center">
+        <div class="max-w-3xl w-full text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tighter leading-tight mb-4">Frequently Asked Questions</h1>
+          <p class="text-white/75 text-lg leading-relaxed max-w-[55ch] mx-auto">Answers to what Chattanooga homeowners ask us most.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="flex flex-col gap-4">
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              How long does a typical basement waterproofing project take?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Most interior waterproofing projects are completed in 1–3 days depending on basement size and the extent of the work. Exterior waterproofing typically takes 2–5 days. We work efficiently and keep disruption to your daily routine to a minimum — you'll know exactly what to expect before we start.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              What are the signs that my basement needs waterproofing?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Common signs include musty odors, visible mold or mildew, water stains on walls or floors, efflorescence (white mineral deposits), cracks in the foundation, or standing water after rain. If you notice any of these, call us for a free inspection — catching it early prevents far more expensive repairs down the road.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              Will waterproofing my basement increase my home's value?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Yes — waterproofing is one of the highest-ROI home improvements you can make. A dry, usable basement is a significant selling point. It also protects the rest of your home from structural damage that can dramatically reduce value over time. Many buyers specifically ask about basement moisture history during inspections.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              How much does basement waterproofing cost?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Cost depends on the size of your basement, the severity of the moisture problem, and the solution required. Interior drainage systems and sump pump installations typically run less than full exterior excavation projects. We provide detailed, itemized written estimates before any work begins — no surprises, no pressure.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              What's the difference between interior and exterior waterproofing?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Interior waterproofing manages water that enters the basement by channeling it to a sump pump system — it's less disruptive and works well for most situations. Exterior waterproofing addresses the source by applying a waterproof membrane to the outside of your foundation walls. We assess each home individually and recommend the approach that solves the actual problem, not just the most expensive option.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              Do you offer warranties on your work?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Yes. All of our waterproofing work is backed by a warranty and our 100% satisfaction guarantee. If moisture returns to a treated area, we come back and fix it at no additional charge. We're a local company — our reputation depends on work that holds up long-term.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              Do you offer crawl space encapsulation?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Absolutely. Crawl space encapsulation is one of our core services. We install heavy-duty vapor barriers, drainage systems, and dehumidifiers to create a fully sealed, dry crawl space environment. This protects your floor structure, improves indoor air quality, and reduces energy costs year-round.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              How do I know if my foundation needs repair?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Warning signs include horizontal or stair-step cracks in foundation walls, bowing or leaning walls, doors and windows that stick or won't close properly, uneven floors, and gaps between walls and the ceiling or floor. If you notice any of these, don't wait — foundation issues worsen over time and become significantly more expensive to fix.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              Can mold come back after remediation?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Mold can return if the underlying moisture problem isn't resolved. That's why our mold remediation always includes addressing the root cause — whether that's a leaking foundation, poor drainage, or inadequate ventilation. Simply removing visible mold without fixing moisture issues is a short-term solution that almost always fails.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              Do you offer free consultations?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Yes — always. We offer free, no-obligation consultations and inspections for all Chattanooga homeowners. We'll come out, assess your situation, explain what we find in plain language, and give you a written estimate. No pressure, no upsell, just honest advice.
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="bg-[#132043] py-16">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tighter mb-4">Still have questions?</h2>
+        <p class="text-white/70 text-lg mb-8">Give us a call — we're happy to talk through your situation with no obligation.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="tel:8653702211" class="inline-block bg-white text-[#132043] font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-colors">(865) 370-2211</a>
+          <a href="/get-an-estimate" class="inline-block bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg transition-colors active:scale-[0.98]">Get a Free Estimate</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+
+  <script is:inline>
+    // Exclusive accordion — only one FAQ open at a time
+    const allDetails = document.querySelectorAll('details');
+    allDetails.forEach((detail) => {
+      detail.addEventListener('toggle', () => {
+        if (detail.open) {
+          allDetails.forEach((other) => {
+            if (other !== detail && other.open) {
+              other.open = false;
+            }
+          });
+        }
+      });
+    });
+  </script>
+</BaseLayout>
