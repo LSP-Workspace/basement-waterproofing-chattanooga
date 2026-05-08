@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout
+  title="Page Not Found | Basement Waterproofing Chattanooga"
+  description="The page you're looking for doesn't exist. Return to the homepage or contact us for help."
+>
+  <Header />
+  <main class="bg-gray-50 min-h-[60vh] flex items-center justify-center">
+    <div class="max-w-xl mx-auto px-4 py-20 text-center">
+      <p class="text-8xl font-bold text-[#2563eb] mb-4">404</p>
+      <h1 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-4">Page Not Found</h1>
+      <p class="text-gray-600 leading-relaxed mb-10">
+        The page you're looking for doesn't exist or has been moved. Head back home or get in touch with us directly.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg transition-colors active:scale-[0.98]">
+          Back to Homepage
+        </a>
+        <a href="/#contact" class="border border-[#132043]/30 hover:border-[#132043] text-[#132043] font-semibold px-8 py-4 rounded-lg transition-colors">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

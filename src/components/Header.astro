@@ -1,0 +1,79 @@
+---
+---
+<header class="sticky top-0 z-50 bg-[#132043] shadow-lg">
+  <!-- Top bar with phone -->
+  <div class="bg-[#0d1730] py-2">
+    <div class="max-w-7xl mx-auto px-4 flex justify-end">
+      <a href="tel:8653702211" class="text-white text-sm font-semibold tracking-wide hover:text-[#2563eb] transition-colors">
+        Call Us: (865) 370-2211
+      </a>
+    </div>
+  </div>
+
+  <!-- Main nav -->
+  <nav class="max-w-7xl mx-auto px-4 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="text-white font-bold text-lg leading-tight max-w-[220px]">
+        Basement Waterproofing Chattanooga
+      </a>
+
+      <!-- Desktop nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/" class="text-white/80 hover:text-white font-medium transition-colors text-sm">Home</a>
+
+        <!-- Services dropdown -->
+        <div class="relative group">
+          <button class="text-white/80 hover:text-white font-medium transition-colors text-sm flex items-center gap-1">
+            Services
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="py-2">
+              <a href="/services/basement-waterproofing/" class="block px-4 py-3 text-[#132043] hover:bg-blue-50 hover:text-[#2563eb] font-medium text-sm transition-colors">Basement Waterproofing</a>
+              <a href="/services/crawl-space-waterproofing/" class="block px-4 py-3 text-[#132043] hover:bg-blue-50 hover:text-[#2563eb] font-medium text-sm transition-colors">Crawl Space Waterproofing</a>
+              <a href="/services/mold-remediation/" class="block px-4 py-3 text-[#132043] hover:bg-blue-50 hover:text-[#2563eb] font-medium text-sm transition-colors">Mold Remediation</a>
+              <a href="/services/foundation-repair/" class="block px-4 py-3 text-[#132043] hover:bg-blue-50 hover:text-[#2563eb] font-medium text-sm transition-colors">Foundation Repair</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="/about/" class="text-white/80 hover:text-white font-medium transition-colors text-sm">About</a>
+        <a href="/#contact" class="text-white/80 hover:text-white font-medium transition-colors text-sm">Contact</a>
+
+        <a href="/#contact" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors active:scale-[0.98]">
+          Get a Free Quote
+        </a>
+      </div>
+
+      <!-- Mobile hamburger (CSS-only) -->
+      <label for="mobile-menu-toggle" class="md:hidden cursor-pointer p-2">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </label>
+    </div>
+
+    <!-- Mobile menu -->
+    <input type="checkbox" id="mobile-menu-toggle" class="hidden peer" />
+    <div class="hidden peer-checked:block md:hidden mt-4 border-t border-white/20 pt-4 pb-2">
+      <div class="flex flex-col gap-1">
+        <a href="/" class="text-white/80 hover:text-white font-medium py-2 text-sm transition-colors">Home</a>
+        <div class="py-1">
+          <p class="text-white/50 text-xs uppercase tracking-widest mb-2 px-0">Services</p>
+          <a href="/services/basement-waterproofing/" class="block text-white/80 hover:text-white font-medium py-1.5 pl-3 text-sm transition-colors">Basement Waterproofing</a>
+          <a href="/services/crawl-space-waterproofing/" class="block text-white/80 hover:text-white font-medium py-1.5 pl-3 text-sm transition-colors">Crawl Space Waterproofing</a>
+          <a href="/services/mold-remediation/" class="block text-white/80 hover:text-white font-medium py-1.5 pl-3 text-sm transition-colors">Mold Remediation</a>
+          <a href="/services/foundation-repair/" class="block text-white/80 hover:text-white font-medium py-1.5 pl-3 text-sm transition-colors">Foundation Repair</a>
+        </div>
+        <a href="/about/" class="text-white/80 hover:text-white font-medium py-2 text-sm transition-colors">About</a>
+        <a href="/#contact" class="text-white/80 hover:text-white font-medium py-2 text-sm transition-colors">Contact</a>
+        <a href="/#contact" class="mt-3 bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold text-sm px-5 py-3 rounded-lg text-center transition-colors">
+          Get a Free Quote
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>

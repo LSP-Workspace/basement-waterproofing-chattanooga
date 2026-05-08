@@ -1,0 +1,315 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Basement Waterproofing Chattanooga",
+  "telephone": "+18653702211",
+  "url": "https://basementwaterproofingchattanooga.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chattanooga",
+    "addressRegion": "TN",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Chattanooga",
+    "addressRegion": "TN"
+  },
+  "description": "Chattanooga's most trusted basement waterproofing experts. Protecting homes from water damage since 2010.",
+  "foundingDate": "2010",
+  "priceRange": "$$"
+};
+---
+<BaseLayout
+  title="Basement Waterproofing Chattanooga | Trusted Local Experts Since 2010"
+  description="Chattanooga's most trusted basement waterproofing company. We offer basement waterproofing, crawl space waterproofing, mold remediation, and foundation repair. Free consultations. Call (865) 370-2211."
+  schema={localBusinessSchema}
+>
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-[#132043] min-h-[100dvh] flex items-center">
+      <div class="max-w-7xl mx-auto px-4 py-20 w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-block bg-[#2563eb]/20 text-[#2563eb] text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-[#2563eb]/30">
+              Serving Chattanooga, TN Since 2010
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tighter leading-none mb-6">
+              Chattanooga's Most Trusted Basement Waterproofing Experts
+            </h1>
+            <p class="text-white/70 text-lg leading-relaxed mb-8 max-w-[55ch]">
+              Protecting homes from water damage since 2010. Free consultations. Guaranteed results.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="#contact" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg text-center transition-colors active:scale-[0.98]">
+                Get a Free Estimate
+              </a>
+              <a href="#services" class="border border-white/30 hover:border-white/60 text-white font-semibold px-8 py-4 rounded-lg text-center transition-colors">
+                Our Services
+              </a>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="https://picsum.photos/seed/basement1/800/600"
+              alt="Basement waterproofing work in a Chattanooga home"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 py-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="flex flex-col items-center text-center gap-2">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <p class="font-bold text-[#132043] text-lg">Founded 2010</p>
+            <p class="text-gray-500 text-sm">15+ years experience</p>
+          </div>
+          <div class="flex flex-col items-center text-center gap-2">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p class="font-bold text-[#132043] text-lg">100% Guarantee</p>
+            <p class="text-gray-500 text-sm">Satisfaction guaranteed</p>
+          </div>
+          <div class="flex flex-col items-center text-center gap-2">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <p class="font-bold text-[#132043] text-lg">Chattanooga, TN</p>
+            <p class="text-gray-500 text-sm">Locally based &amp; owned</p>
+          </div>
+          <div class="flex flex-col items-center text-center gap-2">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <p class="font-bold text-[#132043] text-lg">Free Consultations</p>
+            <p class="text-gray-500 text-sm">No obligation estimates</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="mb-12 text-center">
+          <h2 class="text-4xl md:text-5xl font-bold text-[#132043] tracking-tighter mb-4">Our Services</h2>
+          <p class="text-gray-600 text-lg max-w-[55ch] mx-auto leading-relaxed">
+            Comprehensive water damage solutions for Chattanooga homeowners — from basement to foundation.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Basement Waterproofing -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-[#2563eb]/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#132043] mb-3">Basement Waterproofing</h3>
+            <p class="text-gray-600 leading-relaxed mb-5">Interior and exterior waterproofing systems that keep your basement permanently dry, protecting your home's structure and living space.</p>
+            <a href="/services/basement-waterproofing/" class="text-[#2563eb] font-semibold hover:underline text-sm">Learn More &rarr;</a>
+          </div>
+
+          <!-- Crawl Space Waterproofing -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-[#2563eb]/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#132043] mb-3">Crawl Space Waterproofing</h3>
+            <p class="text-gray-600 leading-relaxed mb-5">Full crawl space encapsulation and vapor barrier installation to eliminate moisture, mold, and structural deterioration beneath your home.</p>
+            <a href="/services/crawl-space-waterproofing/" class="text-[#2563eb] font-semibold hover:underline text-sm">Learn More &rarr;</a>
+          </div>
+
+          <!-- Mold Remediation -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-[#2563eb]/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#132043] mb-3">Mold Remediation</h3>
+            <p class="text-gray-600 leading-relaxed mb-5">Safe, thorough mold removal and prevention treatments that restore air quality and protect your family's health from the ground up.</p>
+            <a href="/services/mold-remediation/" class="text-[#2563eb] font-semibold hover:underline text-sm">Learn More &rarr;</a>
+          </div>
+
+          <!-- Foundation Repair -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-[#2563eb]/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#132043] mb-3">Foundation Repair</h3>
+            <p class="text-gray-600 leading-relaxed mb-5">Expert diagnosis and repair of cracked, bowing, or settling foundations using proven stabilization methods built to last.</p>
+            <a href="/services/foundation-repair/" class="text-[#2563eb] font-semibold hover:underline text-sm">Learn More &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-4xl md:text-5xl font-bold text-[#132043] tracking-tighter mb-8">Why Chattanooga Homeowners Choose Us</h2>
+            <div class="flex flex-col gap-6">
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-[#132043] text-lg mb-1">15+ Years of Local Experience</h3>
+                  <p class="text-gray-600 leading-relaxed">We've worked on hundreds of Chattanooga homes and understand the region's soil, water table, and seasonal patterns that drive moisture problems.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-[#132043] text-lg mb-1">Precision Diagnostics, Not Guesswork</h3>
+                  <p class="text-gray-600 leading-relaxed">Every job starts with a thorough inspection. We identify the root cause before recommending any work — and we only recommend what you actually need.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-[#132043] text-lg mb-1">Transparent Pricing, No Surprises</h3>
+                  <p class="text-gray-600 leading-relaxed">You get a detailed written estimate before work begins. No hidden fees, no upsells, no pressure — just honest work at a fair price.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-[#132043] text-lg mb-1">100% Satisfaction Guarantee</h3>
+                  <p class="text-gray-600 leading-relaxed">We stand behind every job. If the problem returns, so do we — at no additional cost.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-xl">
+            <img
+              src="https://picsum.photos/seed/basement2/800/600"
+              alt="Professional waterproofing technician working in a Chattanooga home"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="mb-12 text-center">
+          <h2 class="text-4xl md:text-5xl font-bold text-[#132043] tracking-tighter mb-4">Common Questions</h2>
+          <p class="text-gray-600 text-lg leading-relaxed">Answers to what Chattanooga homeowners ask us most.</p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              How do I know if my basement needs waterproofing?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Common signs include musty odors, visible mold or mildew, water stains on walls or floors, efflorescence (white mineral deposits), cracks in the foundation, or standing water after rain. If you notice any of these, call us for a free inspection — catching it early prevents far more expensive repairs down the road.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              How long does basement waterproofing take?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Most interior waterproofing projects are completed in 1–3 days depending on basement size and the extent of the work. Exterior waterproofing typically takes 2–5 days. We work efficiently and keep disruption to your daily routine to a minimum — you'll know exactly what to expect before we start.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              What's the difference between interior and exterior waterproofing?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Interior waterproofing manages water that enters the basement by channeling it to a sump pump system — it's less disruptive and works well for most situations. Exterior waterproofing addresses the source by applying a waterproof membrane to the outside of your foundation walls. We assess each home individually and recommend the approach that solves the actual problem, not just the most expensive option.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              Do you offer warranties on your work?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Yes. All of our waterproofing work is backed by a warranty and our 100% satisfaction guarantee. If moisture returns to a treated area, we come back and fix it at no additional charge. We're a local company — our reputation depends on work that holds up long-term.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#132043] py-20">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-6">Get Your Free Estimate</h2>
+        <p class="text-white/70 text-lg leading-relaxed mb-10 max-w-[55ch] mx-auto">
+          Ready to solve your water problem for good? Contact form coming soon. In the meantime, give us a call — we're ready to help.
+        </p>
+        <a href="tel:8653702211" class="inline-block bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold text-2xl px-10 py-6 rounded-xl transition-colors active:scale-[0.98] shadow-lg">
+          (865) 370-2211
+        </a>
+        <p class="text-white/50 text-sm mt-6">Monday–Friday 8am–6pm &bull; Free consultations &bull; No obligation</p>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,15 @@
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/600.css";
+@import "@fontsource/outfit/700.css";
+@import "tailwindcss";
+
+:root {
+  --navy: #132043;
+  --blue: #2563eb;
+}
+
+html {
+  font-family: 'Outfit', sans-serif;
+  color: #1a1a2e;
+  scroll-behavior: smooth;
+}
