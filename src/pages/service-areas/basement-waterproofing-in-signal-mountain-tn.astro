@@ -1,0 +1,357 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+  "name": "Basement Waterproofing Chattanooga",
+  "serviceType": "Basement Waterproofing",
+  "telephone": "+18653702211",
+  "url": "https://basementwaterproofingchattanooga.com/service-areas/basement-waterproofing-in-signal-mountain-tn/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Signal Mountain",
+    "addressRegion": "TN",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "City", "name": "Signal Mountain", "addressRegion": "TN" }
+};
+---
+<BaseLayout
+  title="Basement Waterproofing in Signal Mountain, TN | Trusted Local Experts"
+  description="Expert basement waterproofing, crawl space waterproofing, mold remediation, and foundation repair in Signal Mountain, TN. Free consultations. Call (865) 370-2211."
+  schema={schema}
+>
+  <Header />
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section
+      class="relative min-h-[60dvh] flex items-center bg-[#132043] [background-position:top] md:[background-position:top]"
+      style="background-image: url('/images/hero-basement-waterproofing.webp'); background-size: cover;"
+    >
+      <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.25));"></div>
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 py-16 flex justify-center">
+        <div class="max-w-3xl w-full text-center">
+          <p class="text-white/90 text-base font-semibold uppercase tracking-widest mb-4" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.65);">SERVING SIGNAL MOUNTAIN, TENNESSEE</p>
+          <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tighter leading-tight mb-6" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.75);">
+            Basement Waterproofing in Signal Mountain, TN
+          </h1>
+          <p class="text-white/75 text-lg leading-relaxed mb-8 max-w-[55ch] mx-auto" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.65);">
+            Steep terrain, fast-moving surface water, and older stone foundations — Signal Mountain homes face unique waterproofing challenges. We know exactly how to handle them.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contact" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg transition-colors active:scale-[0.98]">
+              Get a Free Estimate
+            </a>
+            <a href="tel:8653702211" class="border border-white/70 bg-[#132043]/40 hover:bg-transparent hover:border-white text-white font-semibold px-8 py-4 rounded-lg text-center transition-colors">
+              (865) 370-2211
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-6">
+              Basement Waterproofing Services in Signal Mountain
+            </h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              Signal Mountain's steep terrain at roughly 2,000 feet of elevation creates waterproofing challenges unlike anywhere else in the Chattanooga area. Surface water moves fast downhill, hitting foundations on every grade with force. The community's older homes — many with stone or block foundations — are particularly vulnerable to this kind of surface water intrusion.
+            </p>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              Exterior drainage and French drain systems are critical on Signal Mountain. Without proper surface water management, even a well-constructed foundation will eventually lose the battle against consistent downhill flow. We design systems that intercept and redirect water before it ever reaches your home's foundation.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Every project starts with a free on-site consultation — no pressure, no obligation. We assess the actual problem and give you a clear, honest recommendation.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 text-center">
+              <p class="font-bold text-[#132043] text-2xl mb-1">2010</p>
+              <p class="text-gray-500 text-sm">Founded in Chattanooga</p>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 text-center">
+              <p class="font-bold text-[#132043] text-2xl mb-1">100%</p>
+              <p class="text-gray-500 text-sm">Satisfaction guaranteed</p>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 text-center">
+              <p class="font-bold text-[#132043] text-2xl mb-1">Free</p>
+              <p class="text-gray-500 text-sm">Consultations, no obligation</p>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 text-center">
+              <p class="font-bold text-[#132043] text-2xl mb-1">Local</p>
+              <p class="text-gray-500 text-sm">Chattanooga-based team</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="mb-12 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-4">Our Services in Signal Mountain</h2>
+          <p class="text-gray-600 text-lg max-w-[55ch] mx-auto leading-relaxed">
+            From wet basements to cracked foundations — we handle it all, backed by a satisfaction guarantee.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
+            <div class="h-52 overflow-hidden">
+              <img src="/images/hero-basement-waterproofing.webp" alt="Basement waterproofing in Signal Mountain TN" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-[#132043] mb-3"><a href="/basement-waterproofing/" class="hover:text-[#2563eb] transition-colors">Basement Waterproofing</a></h3>
+              <p class="text-gray-600 leading-relaxed mb-5">Interior drainage systems, sump pump installation, wall sealants, and exterior membrane waterproofing — tailored to Signal Mountain's steep-grade foundations.</p>
+              <a href="/basement-waterproofing/" class="text-[#2563eb] font-semibold hover:underline text-sm">Learn More &rarr;</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
+            <div class="h-52 overflow-hidden">
+              <img src="/images/hero-crawl-space.webp" alt="Crawl space waterproofing in Signal Mountain TN" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-[#132043] mb-3"><a href="/crawl-space-waterproofing/" class="hover:text-[#2563eb] transition-colors">Crawl Space Waterproofing</a></h3>
+              <p class="text-gray-600 leading-relaxed mb-5">Full encapsulation, vapor barriers, and drainage solutions that eliminate moisture and protect your home's structure from the ground up.</p>
+              <a href="/crawl-space-waterproofing/" class="text-[#2563eb] font-semibold hover:underline text-sm">Learn More &rarr;</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
+            <div class="h-52 overflow-hidden">
+              <img src="/images/hero-mold-remediation.webp" alt="Mold remediation in Signal Mountain TN" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-[#132043] mb-3"><a href="/mold-remediation/" class="hover:text-[#2563eb] transition-colors">Mold Remediation</a></h3>
+              <p class="text-gray-600 leading-relaxed mb-5">Safe, certified mold removal and prevention. We address the moisture source and treat the affected areas to keep your home healthy long-term.</p>
+              <a href="/mold-remediation/" class="text-[#2563eb] font-semibold hover:underline text-sm">Learn More &rarr;</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
+            <div class="h-52 overflow-hidden">
+              <img src="/images/hero-foundation-repair.webp" alt="Foundation repair in Signal Mountain TN" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-[#132043] mb-3"><a href="/foundation-repair/" class="hover:text-[#2563eb] transition-colors">Foundation Repair</a></h3>
+              <p class="text-gray-600 leading-relaxed mb-5">Crack injection, wall stabilization, and structural repair for Signal Mountain homes dealing with settling, bowing walls, or stone and block foundation deterioration.</p>
+              <a href="/foundation-repair/" class="text-[#2563eb] font-semibold hover:underline text-sm">Learn More &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-8">Why Signal Mountain Homeowners Choose Us</h2>
+            <div class="flex flex-col gap-6">
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-[#132043] text-lg mb-1">Mountain Terrain Expertise</h3>
+                  <p class="text-gray-600 leading-relaxed">We understand the fast-moving surface water dynamics of Signal Mountain's steep grades and how they impact stone and block foundations. Our drainage designs are built for elevation.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-[#132043] text-lg mb-1">Honest Assessments, Not Upsells</h3>
+                  <p class="text-gray-600 leading-relaxed">We tell you exactly what's wrong and what will fix it — nothing more. Transparent pricing with no hidden fees.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-[#132043] text-lg mb-1">Work That Holds Up</h3>
+                  <p class="text-gray-600 leading-relaxed">Every project is backed by our 100% satisfaction guarantee. If moisture returns to a treated area, we come back and fix it.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-[#132043] text-lg mb-1">Minimal Disruption</h3>
+                  <p class="text-gray-600 leading-relaxed">Most jobs are completed in 1–3 days. We work cleanly and efficiently so your home stays livable throughout the project.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-xl">
+            <img src="/images/team-mike-thompson.webp" alt="Basement Waterproofing Chattanooga team" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Neighborhoods -->
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="mb-12 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-4">Serving All of Signal Mountain</h2>
+          <p class="text-gray-600 text-lg max-w-[55ch] mx-auto leading-relaxed">
+            From the Town Center to Shackleford Ridge, our trucks are on the road across Signal Mountain every day.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {["Signal Mountain Town Center", "Taft Highway Corridor", "Alexian Village Area", "Shackleford Ridge", "Walden", "Red Bank", "Hixson", "Soddy-Daisy"].map(n => (
+            <div class="bg-white rounded-xl px-4 py-3 border border-gray-100 text-center">
+              <p class="text-[#132043] font-medium text-sm">{n}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-white py-20">
+      <div class="max-w-3xl mx-auto px-4">
+        <div class="mb-12 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-4">Signal Mountain FAQ</h2>
+        </div>
+        <div class="flex flex-col gap-4">
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              How does Signal Mountain's steep terrain affect foundations?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              At roughly 2,000 feet of elevation, Signal Mountain's steep grades mean surface water moves quickly downhill and concentrates against any structure in its path. Unlike flat-terrain homes where water pools and slowly percolates, Signal Mountain homes experience fast-moving water that hits foundations with momentum. Older stone and block foundations — which are common here — are especially susceptible to this kind of surface water intrusion and the cracking it causes over time.
+            </div>
+          </details>
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              Why are French drains so important on Signal Mountain?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              French drains intercept surface and subsurface water before it reaches your foundation — which on Signal Mountain means catching fast-moving downhill runoff early. A properly designed French drain system on a sloped Signal Mountain lot can dramatically reduce the water load your foundation sees during heavy rain. Combined with interior drainage, it's the most comprehensive protection available for mountain-terrain homes.
+            </div>
+          </details>
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              How quickly can you respond in Signal Mountain?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              For most Signal Mountain homeowners, we can schedule a free consultation within 1–2 business days. For urgent situations involving active water intrusion, call us directly at (865) 370-2211 and we'll prioritize your visit.
+            </div>
+          </details>
+          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer font-semibold text-[#132043] hover:bg-gray-50 transition-colors list-none">
+              Do you offer free consultations in Signal Mountain?
+              <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+              Absolutely. Every job starts with a free, no-obligation on-site consultation. We assess your specific situation, explain what we're seeing, and give you a detailed estimate. No pressure, no sales pitch — just an honest look at what's going on and how we'd fix it.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#132043] py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+          <div class="pt-2">
+            <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-6">Get Your Free Estimate</h2>
+            <p class="text-white/70 text-lg leading-relaxed mb-8">Ready to solve your water problem for good? Fill out the form and we'll be in touch within one business day. No obligation, no pressure.</p>
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-3"><div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-white/80">Free, no-obligation consultations</span></div>
+              <div class="flex items-center gap-3"><div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-white/80">Transparent pricing, no hidden fees</span></div>
+              <div class="flex items-center gap-3"><div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-white/80">100% satisfaction guaranteed</span></div>
+              <div class="flex items-center gap-3"><div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div><span class="text-white/80">Serving Signal Mountain &amp; surrounding areas</span></div>
+            </div>
+            <div class="mt-10 pt-8 border-t border-white/20">
+              <p class="text-white/50 text-sm mb-2">Prefer to call?</p>
+              <a href="tel:8653702211" class="text-white font-bold text-2xl hover:text-[#93c5fd] transition-colors">(865) 370-2211</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-xl">
+            <h3 class="text-xl font-bold text-[#132043] mb-6">Tell Us About Your Project</h3>
+            <form id="contact-form" class="flex flex-col gap-5" novalidate>
+              <input type="text" name="_hp" class="hidden" tabindex="-1" autocomplete="off" />
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div><label for="firstName" class="block text-sm font-semibold text-[#132043] mb-1.5">First Name <span class="text-red-500">*</span></label><input type="text" id="firstName" name="firstName" required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition" placeholder="Mike" /></div>
+                <div><label for="lastName" class="block text-sm font-semibold text-[#132043] mb-1.5">Last Name <span class="text-red-500">*</span></label><input type="text" id="lastName" name="lastName" required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition" placeholder="Thompson" /></div>
+              </div>
+              <div><label for="email" class="block text-sm font-semibold text-[#132043] mb-1.5">Email <span class="text-red-500">*</span></label><input type="email" id="email" name="email" required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition" placeholder="mike@example.com" /></div>
+              <div><label for="phone" class="block text-sm font-semibold text-[#132043] mb-1.5">Phone <span class="text-red-500">*</span></label><input type="tel" id="phone" name="phone" required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition" placeholder="(865) 555-0123" /></div>
+              <div><label for="message" class="block text-sm font-semibold text-[#132043] mb-1.5">Tell Us About Your Project</label><textarea id="message" name="message" rows="4" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition resize-none" placeholder="Describe the issue — damp basement, crawl space moisture, cracks in foundation..."></textarea></div>
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAADLoAKoG-gOkkr1j" data-appearance="interaction-only"></div>
+              <div id="form-success" class="hidden bg-green-50 border border-green-200 text-green-800 rounded-lg px-4 py-3 text-sm font-medium">✓ Thanks! We'll be in touch within one business day.</div>
+              <div id="form-error" class="hidden bg-red-50 border border-red-200 text-red-800 rounded-lg px-4 py-3 text-sm">Something went wrong. Please call us at (865) 370-2211.</div>
+              <button type="submit" id="form-submit" class="w-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold py-4 rounded-lg transition-colors active:scale-[0.98] text-base">Request My Free Estimate</button>
+              <p class="text-gray-400 text-xs text-center">No spam. No obligation. We respect your privacy.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+
+  <script is:inline>
+    (function () {
+      var form = document.getElementById('contact-form');
+      var submitBtn = document.getElementById('form-submit');
+      var successMsg = document.getElementById('form-success');
+      var errorMsg = document.getElementById('form-error');
+      if (!form) return;
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        successMsg.classList.add('hidden');
+        errorMsg.classList.add('hidden');
+        var turnstileToken = form.querySelector('[name="cf-turnstile-response"]')?.value || '';
+        var payload = {
+          firstName: form.querySelector('#firstName')?.value || '',
+          lastName: form.querySelector('#lastName')?.value || '',
+          email: form.querySelector('#email')?.value || '',
+          phone: form.querySelector('#phone')?.value || '',
+          message: form.querySelector('#message')?.value || '',
+          _hp: form.querySelector('[name="_hp"]')?.value || '',
+          turnstileToken: turnstileToken,
+        };
+        try {
+          var res = await fetch('/api/submit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+          var result = await res.json();
+          if (result.status === 'success') { successMsg.classList.remove('hidden'); form.reset(); if (window.turnstile) window.turnstile.reset(); }
+          else { errorMsg.classList.remove('hidden'); if (window.turnstile) window.turnstile.reset(); }
+        } catch (err) { errorMsg.classList.remove('hidden'); if (window.turnstile) window.turnstile.reset(); }
+        finally { submitBtn.disabled = false; submitBtn.textContent = 'Request My Free Estimate'; }
+      });
+    })();
+  </script>
+
+  <script is:inline>
+    document.querySelectorAll('details').forEach(function(detail) {
+      detail.addEventListener('toggle', function() {
+        if (detail.open) {
+          document.querySelectorAll('details').forEach(function(other) {
+            if (other !== detail && other.open) other.open = false;
+          });
+        }
+      });
+    });
+  </script>
+</BaseLayout>
