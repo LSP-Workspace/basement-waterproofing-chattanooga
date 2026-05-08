@@ -1,0 +1,255 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Basement Waterproofing Chattanooga",
+  "telephone": "+18653702211",
+  "url": "https://basementwaterproofingchattanooga.com/service-areas/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chattanooga",
+    "addressRegion": "TN",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" },
+    { "@type": "City", "name": "Hixson", "addressRegion": "TN" },
+    { "@type": "City", "name": "Soddy-Daisy", "addressRegion": "TN" },
+    { "@type": "City", "name": "Red Bank", "addressRegion": "TN" },
+    { "@type": "City", "name": "East Brainerd", "addressRegion": "TN" },
+    { "@type": "City", "name": "East Ridge", "addressRegion": "TN" },
+    { "@type": "City", "name": "Signal Mountain", "addressRegion": "TN" },
+    { "@type": "City", "name": "Ooltewah", "addressRegion": "TN" },
+    { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
+    { "@type": "City", "name": "Fort Oglethorpe", "addressRegion": "GA" }
+  ]
+};
+
+const areas = [
+  {
+    name: "Downtown Chattanooga",
+    state: "TN",
+    description: "Full residential and commercial waterproofing coverage in the heart of Chattanooga. Older homes and mixed-use buildings downtown often have aging foundations that benefit from both interior drainage systems and exterior membrane work.",
+    services: ["Basement Waterproofing", "Crawl Space Encapsulation", "Foundation Repair", "Mold Remediation"],
+  },
+  {
+    name: "Hixson",
+    state: "TN",
+    description: "Hixson's hillside lots and clay-heavy soil create real drainage challenges. We serve the entire Hixson community with foundation stabilization, sump pump systems, and crawl space moisture control.",
+    services: ["Foundation Repair", "Basement Waterproofing", "Crawl Space Encapsulation"],
+  },
+  {
+    name: "East Brainerd",
+    state: "TN",
+    description: "One of Chattanooga's fastest-growing neighborhoods. We work with homeowners and builders in East Brainerd on new-construction waterproofing, crawl space systems, and basement drainage.",
+    services: ["Basement Waterproofing", "Crawl Space Encapsulation", "Drainage Systems"],
+  },
+  {
+    name: "Red Bank",
+    state: "TN",
+    description: "Red Bank homes frequently deal with moisture intrusion due to proximity to Stringers Ridge and local drainage patterns. Our team handles interior and exterior waterproofing across the area.",
+    services: ["Interior Waterproofing", "Exterior Waterproofing", "Mold Remediation"],
+  },
+  {
+    name: "Soddy-Daisy",
+    state: "TN",
+    description: "Soddy-Daisy's rural terrain and seasonal heavy rains can saturate foundations quickly. We provide full waterproofing and mold remediation services to homeowners throughout the area.",
+    services: ["Basement Waterproofing", "Mold Remediation", "Sump Pump Installation"],
+  },
+  {
+    name: "East Ridge",
+    state: "TN",
+    description: "East Ridge's established neighborhoods include many homes with block foundation walls that are especially prone to water seepage. We specialize in block wall crack injection and interior drainage systems.",
+    services: ["Foundation Crack Repair", "Interior Drainage", "Crawl Space Encapsulation"],
+  },
+  {
+    name: "Signal Mountain",
+    state: "TN",
+    description: "Mountain terrain means water moves fast. Homes on Signal Mountain often deal with surface runoff entering basements and crawl spaces. We design drainage solutions built for steep-grade lots.",
+    services: ["Exterior Waterproofing", "Foundation Repair", "Drainage Systems"],
+  },
+  {
+    name: "Ooltewah",
+    state: "TN",
+    description: "Ooltewah's newer subdivisions and older farmhouses alike can have moisture issues. We serve the full Ooltewah corridor with crawl space encapsulation, sump systems, and foundation repair.",
+    services: ["Crawl Space Encapsulation", "Sump Pump Installation", "Foundation Repair"],
+  },
+  {
+    name: "Ringgold",
+    state: "GA",
+    description: "Just across the state line, Ringgold homeowners get the same quality service and warranty coverage as our Tennessee customers. Water doesn't respect borders — neither do we.",
+    services: ["Basement Waterproofing", "Crawl Space Encapsulation", "Mold Remediation"],
+  },
+  {
+    name: "Fort Oglethorpe",
+    state: "GA",
+    description: "Fort Oglethorpe's historic homes often have aging masonry foundations that need specialized care. We bring the same expertise and warranty to every job south of the state line.",
+    services: ["Foundation Repair", "Interior Drainage", "Mold Remediation"],
+  },
+];
+---
+<BaseLayout
+  title="Service Areas | Basement Waterproofing Chattanooga"
+  description="Basement Waterproofing Chattanooga serves Chattanooga, Hixson, Red Bank, East Brainerd, Soddy-Daisy, East Ridge, Signal Mountain, Ooltewah, Ringgold, and surrounding areas. Call (865) 370-2211."
+  schema={schema}
+>
+  <Header />
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="bg-[#132043] min-h-[40dvh] flex items-center">
+      <div class="w-full max-w-7xl mx-auto px-4 py-16 text-center">
+        <p class="text-white/70 text-sm font-semibold uppercase tracking-widest mb-4">Chattanooga &amp; Surrounding Communities</p>
+        <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tighter leading-tight mb-6">
+          Service Areas
+        </h1>
+        <p class="text-white/70 text-lg leading-relaxed max-w-[55ch] mx-auto mb-8">
+          We serve the greater Chattanooga region — Hamilton County and beyond. If you're not sure whether we cover your area, just call.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/estimate/" class="inline-block bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg transition-colors active:scale-[0.98]">
+            Get a Free Estimate
+          </a>
+          <a href="tel:8653702211" class="border border-white/50 hover:border-white text-white font-semibold px-8 py-4 rounded-lg transition-colors text-center">
+            (865) 370-2211
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage Summary -->
+    <section class="bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 py-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <p class="font-bold text-[#132043] text-lg">Chattanooga, TN</p>
+            <p class="text-gray-500 text-sm">Primary service area</p>
+          </div>
+          <div>
+            <p class="font-bold text-[#132043] text-lg">Hamilton County</p>
+            <p class="text-gray-500 text-sm">Full county coverage</p>
+          </div>
+          <div>
+            <p class="font-bold text-[#132043] text-lg">NW Georgia</p>
+            <p class="text-gray-500 text-sm">Ringgold, Fort Oglethorpe &amp; more</p>
+          </div>
+          <div>
+            <p class="font-bold text-[#132043] text-lg">Free Estimates</p>
+            <p class="text-gray-500 text-sm">For all covered areas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Area Cards -->
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-4">Communities We Serve</h2>
+          <p class="text-gray-600 text-lg max-w-[55ch] mx-auto leading-relaxed">
+            From Signal Mountain to Ringgold — our trucks are on the road across the region every day.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {areas.map(area => (
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+              <div class="flex items-start justify-between gap-4 mb-4">
+                <h2 class="text-xl font-bold text-[#132043]">{area.name}</h2>
+                <span class="flex-shrink-0 text-xs font-bold text-[#2563eb] bg-blue-50 px-2.5 py-1 rounded-full">{area.state}</span>
+              </div>
+              <p class="text-gray-600 leading-relaxed mb-5 text-sm">{area.description}</p>
+              <div class="flex flex-wrap gap-2">
+                {area.services.map(s => (
+                  <span class="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full">{s}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Not on the list? -->
+    <section class="bg-white py-16">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#132043] tracking-tighter mb-4">Don't see your city listed?</h2>
+        <p class="text-gray-600 text-lg leading-relaxed mb-8">
+          Our coverage extends beyond the areas listed above. If you're within a reasonable drive of Chattanooga, there's a good chance we can help. Give us a call and we'll confirm whether your address is in our service zone.
+        </p>
+        <a href="tel:8653702211" class="inline-block bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg transition-colors active:scale-[0.98]">
+          Call (865) 370-2211
+        </a>
+      </div>
+    </section>
+
+    <!-- Services Banner -->
+    <section class="bg-gray-50 py-16 border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-10">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#132043] tracking-tighter mb-3">Services Available Across All Areas</h2>
+          <p class="text-gray-600 leading-relaxed max-w-[50ch] mx-auto">Every community we serve gets access to our full range of waterproofing and foundation services.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <a href="/basement-waterproofing/" class="group bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:border-[#2563eb]/30 hover:shadow-md transition-all text-center">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#2563eb]/20 transition-colors">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-[#132043] mb-1 text-sm">Basement Waterproofing</h3>
+            <p class="text-gray-500 text-xs">Interior &amp; exterior solutions</p>
+          </a>
+          <a href="/crawl-space-waterproofing/" class="group bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:border-[#2563eb]/30 hover:shadow-md transition-all text-center">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#2563eb]/20 transition-colors">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-[#132043] mb-1 text-sm">Crawl Space Waterproofing</h3>
+            <p class="text-gray-500 text-xs">Encapsulation &amp; drainage</p>
+          </a>
+          <a href="/mold-remediation/" class="group bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:border-[#2563eb]/30 hover:shadow-md transition-all text-center">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#2563eb]/20 transition-colors">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-[#132043] mb-1 text-sm">Mold Remediation</h3>
+            <p class="text-gray-500 text-xs">Safe removal &amp; prevention</p>
+          </a>
+          <a href="/foundation-repair/" class="group bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:border-[#2563eb]/30 hover:shadow-md transition-all text-center">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#2563eb]/20 transition-colors">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-[#132043] mb-1 text-sm">Foundation Repair</h3>
+            <p class="text-gray-500 text-xs">Stabilization &amp; crack repair</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[#132043] py-16">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tighter mb-4">
+          Protect your home — wherever you are.
+        </h2>
+        <p class="text-white/70 text-lg leading-relaxed mb-8">
+          Free estimates for homeowners across the Chattanooga region. We'll be in touch within one business day.
+        </p>
+        <a href="/estimate/" class="inline-block bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg transition-colors active:scale-[0.98]">
+          Get a Free Estimate
+        </a>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</BaseLayout>

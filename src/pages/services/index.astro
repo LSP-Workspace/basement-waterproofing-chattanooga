@@ -1,0 +1,262 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Basement Waterproofing Chattanooga",
+  "telephone": "+18653702211",
+  "url": "https://basementwaterproofingchattanooga.com/services/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chattanooga",
+    "addressRegion": "TN",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Waterproofing & Foundation Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Basement Waterproofing", "url": "https://basementwaterproofingchattanooga.com/basement-waterproofing/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crawl Space Waterproofing", "url": "https://basementwaterproofingchattanooga.com/crawl-space-waterproofing/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mold Remediation", "url": "https://basementwaterproofingchattanooga.com/mold-remediation/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Foundation Repair", "url": "https://basementwaterproofingchattanooga.com/foundation-repair/" } }
+    ]
+  }
+};
+
+const services = [
+  {
+    title: "Basement Waterproofing",
+    href: "/basement-waterproofing/",
+    image: "/images/hero-basement-waterproofing.webp",
+    alt: "Basement waterproofing services in Chattanooga, TN",
+    description: "Keep your basement permanently dry with interior drainage systems, sump pump installation, epoxy crack injections, and exterior membrane barriers. Built to last through Tennessee's rainiest seasons.",
+    bullets: ["Interior & exterior solutions", "Sump pump installation", "Crack injection & sealing", "Drainage systems"],
+  },
+  {
+    title: "Crawl Space Waterproofing",
+    href: "/crawl-space-waterproofing/",
+    image: "/images/hero-crawl-space.webp",
+    alt: "Crawl space waterproofing and encapsulation in Chattanooga",
+    description: "A wet crawl space drives up humidity, invites mold, and weakens floor joists over time. We encapsulate, insulate, and drain crawl spaces so the air under your home stops working against you.",
+    bullets: ["Full crawl space encapsulation", "Vapor barrier installation", "Drainage & sump systems", "Moisture control"],
+  },
+  {
+    title: "Mold Remediation",
+    href: "/mold-remediation/",
+    image: "/images/hero-mold-remediation.webp",
+    alt: "Mold remediation services in Chattanooga, TN",
+    description: "Mold in a basement or crawl space is a health hazard and a sign of an underlying moisture problem. We safely remove existing mold and treat the source so it doesn't come back.",
+    bullets: ["Safe mold removal & disposal", "Air quality testing", "Antimicrobial treatment", "Source moisture correction"],
+  },
+  {
+    title: "Foundation Repair",
+    href: "/foundation-repair/",
+    image: "/images/hero-foundation-repair.webp",
+    alt: "Foundation repair services in Chattanooga, TN",
+    description: "Cracks, bowing walls, and settling foundations don't fix themselves. Our foundation repair services stabilize your home before small problems become expensive structural failures.",
+    bullets: ["Crack repair & stabilization", "Wall anchors & carbon fiber straps", "Pier systems for settling", "Lifetime transferable warranty"],
+  },
+];
+---
+<BaseLayout
+  title="Our Services | Basement Waterproofing Chattanooga"
+  description="Basement waterproofing, crawl space encapsulation, mold remediation, and foundation repair in Chattanooga, TN. Free estimates. Call (865) 370-2211."
+  schema={schema}
+>
+  <Header />
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="bg-[#132043] min-h-[40dvh] flex items-center">
+      <div class="w-full max-w-7xl mx-auto px-4 py-16 text-center">
+        <p class="text-white/70 text-sm font-semibold uppercase tracking-widest mb-4">Chattanooga's Trusted Waterproofing Team</p>
+        <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tighter leading-tight mb-6">
+          Waterproofing &amp; Foundation Services
+        </h1>
+        <p class="text-white/70 text-lg leading-relaxed max-w-[55ch] mx-auto mb-8">
+          From wet basements to failing foundations — we handle it all. Every job is backed by our 100% satisfaction guarantee.
+        </p>
+        <a href="/estimate/" class="inline-block bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg transition-colors active:scale-[0.98]">
+          Get a Free Estimate
+        </a>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <p class="font-bold text-[#132043] text-lg">15+ Years</p>
+            <p class="text-gray-500 text-sm">Serving Chattanooga</p>
+          </div>
+          <div>
+            <p class="font-bold text-[#132043] text-lg">1,000+ Jobs</p>
+            <p class="text-gray-500 text-sm">Completed locally</p>
+          </div>
+          <div>
+            <p class="font-bold text-[#132043] text-lg">Licensed &amp; Insured</p>
+            <p class="text-gray-500 text-sm">Fully credentialed</p>
+          </div>
+          <div>
+            <p class="font-bold text-[#132043] text-lg">100% Guarantee</p>
+            <p class="text-gray-500 text-sm">Satisfaction or we fix it</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-4">Everything We Do</h2>
+          <p class="text-gray-600 text-lg max-w-[50ch] mx-auto leading-relaxed">
+            All services are performed by our in-house team — no subcontractors, no handoffs.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-12">
+          {services.map((service, i) => (
+            <div class={`bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-0 ${i % 2 === 1 ? 'md:[direction:rtl]' : ''}`}>
+              <!-- Image -->
+              <div class="relative h-64 md:h-auto min-h-[260px] overflow-hidden md:[direction:ltr]">
+                <img
+                  src={service.image}
+                  alt={service.alt}
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <!-- Content -->
+              <div class="p-8 md:p-10 flex flex-col justify-center md:[direction:ltr]">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#132043] tracking-tight mb-4">
+                  <a href={service.href} class="hover:text-[#2563eb] transition-colors">{service.title}</a>
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-6">{service.description}</p>
+                <ul class="flex flex-col gap-2 mb-8">
+                  {service.bullets.map(bullet => (
+                    <li class="flex items-center gap-3 text-sm text-gray-700">
+                      <span class="flex-shrink-0 w-5 h-5 bg-[#2563eb] rounded-full flex items-center justify-center">
+                        <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </span>
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+                <a href={service.href} class="self-start bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-6 py-3 rounded-lg transition-colors active:scale-[0.98] text-sm">
+                  Learn More &rarr;
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-6">
+              Why Chattanooga Homeowners Choose Us
+            </h2>
+            <p class="text-gray-600 text-lg leading-relaxed mb-8">
+              We're a local company — our technicians live here, our reputation was built here, and every job we do stays in the community we call home. That accountability drives us to get every job right the first time.
+            </p>
+            <div class="flex flex-col gap-5">
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#132043]">No subcontractors</p>
+                  <p class="text-gray-600 text-sm leading-relaxed">Our trained in-house team does every job. You always know who's in your home.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#132043]">Transparent, upfront pricing</p>
+                  <p class="text-gray-600 text-sm leading-relaxed">You get a detailed estimate before any work begins. No hidden fees, ever.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#132043]">Backed by a real warranty</p>
+                  <p class="text-gray-600 text-sm leading-relaxed">If moisture returns to a treated area, we come back and make it right at no charge.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#132043]">15+ years of local experience</p>
+                  <p class="text-gray-600 text-sm leading-relaxed">We know Chattanooga's soil, weather, and housing stock — that local knowledge makes a difference.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-10 border border-gray-100">
+            <h3 class="text-xl font-bold text-[#132043] mb-6">Not sure which service you need?</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              That's what we're here for. Describe what you're seeing — water stains, a musty smell, cracks in the wall, a damp floor — and we'll tell you exactly what's going on and how to fix it.
+            </p>
+            <p class="text-gray-600 leading-relaxed mb-8">
+              Our estimates are free, and we'll never push a service you don't need.
+            </p>
+            <a href="/estimate/" class="inline-block w-full text-center bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg transition-colors active:scale-[0.98]">
+              Schedule a Free Estimate
+            </a>
+            <p class="text-center text-gray-400 text-sm mt-4">Or call us directly: <a href="tel:8653702211" class="text-[#2563eb] hover:underline font-medium">(865) 370-2211</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="bg-[#132043] py-16">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tighter mb-4">
+          Ready to protect your home?
+        </h2>
+        <p class="text-white/70 text-lg leading-relaxed mb-8">
+          Free estimates for Chattanooga homeowners. We respond within one business day.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/estimate/" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg transition-colors active:scale-[0.98]">
+            Get a Free Estimate
+          </a>
+          <a href="tel:8653702211" class="border border-white/50 hover:border-white text-white font-semibold px-8 py-4 rounded-lg transition-colors text-center">
+            (865) 370-2211
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</BaseLayout>
