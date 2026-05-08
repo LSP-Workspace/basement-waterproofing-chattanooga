@@ -1,0 +1,356 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Basement Waterproofing Chattanooga",
+  "telephone": "+18653702211",
+  "url": "https://basementwaterproofingchattanooga.com/about/",
+  "foundingDate": "2010",
+  "founder": {
+    "@type": "Person",
+    "name": "Mike Thompson"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chattanooga",
+    "addressRegion": "TN",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
+};
+---
+<BaseLayout
+  title="About Basement Waterproofing Chattanooga | Our Story & Team"
+  description="Learn about Basement Waterproofing Chattanooga — founded in 2010 by Mike Thompson. Meet our local team and discover our mission to protect Chattanooga homes from water damage."
+  schema={schema}
+>
+  <Header />
+  <main id="main-content">
+
+    <!-- Hero (navy color block, no image) -->
+    <section class="bg-[#132043] min-h-[60dvh] flex items-center">
+      <div class="max-w-7xl mx-auto px-4 py-20 w-full">
+        <div class="max-w-2xl">
+          <p class="text-white/70 text-sm font-semibold uppercase tracking-widest mb-4">Chattanooga's Trusted Waterproofing Team</p>
+          <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tighter leading-none mb-6">
+            About Basement Waterproofing Chattanooga
+          </h1>
+          <p class="text-white/70 text-lg leading-relaxed max-w-[55ch]">
+            A locally-owned company with over 15 years of experience protecting Chattanooga homes from water damage, mold, and foundation problems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founding Story -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-6">Our Story</h2>
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              Founded in 2010 by Chattanooga native Mike Thompson, Basement Waterproofing Chattanooga was born out of a personal experience with water damage in his own basement. After struggling to find reliable, trustworthy help, Mike saw a clear need for a waterproofing company that put honesty and craftsmanship first.
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              He set out to build a company defined by straight talk, fair pricing, and work that actually holds up. Over 15 years later, that's still the foundation we operate on.
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed">
+              Our mission is simple: to ensure every home in Chattanooga remains safe, dry, and structurally sound, so families can enjoy their homes without worry.
+            </p>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-xl">
+            <img
+              src="/images/team-mike-thompson.webp"
+              alt="Mike Thompson, founder of Basement Waterproofing Chattanooga, inspecting a home"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-4">What We Stand For</h2>
+          <p class="text-gray-600 text-lg leading-relaxed max-w-[65ch]">
+            We don't sell waterproofing. We solve problems. That distinction shapes everything we do, from how we inspect to how we price.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center mb-5">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-[#132043] text-lg mb-3">Local Expertise</h3>
+            <p class="text-gray-600 leading-relaxed">Our deep roots in Chattanooga drive us to provide top-notch service. We understand the unique challenges posed by the local climate and terrain, and our team is dedicated to offering solutions tailored to each client's needs.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center mb-5">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-[#132043] text-lg mb-3">Comprehensive Services</h3>
+            <p class="text-gray-600 leading-relaxed">From basement and crawl space waterproofing to mold remediation and foundation repair, we offer a full suite of services to protect your home — from the ground up.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center mb-5">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-[#132043] text-lg mb-3">Community Commitment</h3>
+            <p class="text-gray-600 leading-relaxed">Our commitment to the Chattanooga area is unwavering. We strive to contribute positively to our community by ensuring the longevity and safety of its homes, one job at a time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="mb-12 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-4">Meet Our Team</h2>
+          <p class="text-gray-600 text-lg max-w-[55ch] mx-auto leading-relaxed">
+            A dedicated local team with the experience and commitment to protect your home.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <h3 class="font-bold text-[#132043] text-lg mb-1">Mike Thompson</h3>
+            <p class="text-[#2563eb] font-semibold text-sm mb-3">Founder &amp; CEO</p>
+            <p class="text-gray-600 text-sm leading-relaxed">A Chattanooga native, Mike is passionate about home safety and community service. With over 15 years of experience in the waterproofing industry, he leads our team with dedication and a personal touch that comes from having faced the same problem himself.</p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <h3 class="font-bold text-[#132043] text-lg mb-1">Sarah Johnson</h3>
+            <p class="text-[#2563eb] font-semibold text-sm mb-3">Operations Manager</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Born and raised in Chattanooga, Sarah brings a wealth of local knowledge and organizational expertise to the team. Her focus is on ensuring seamless service delivery and customer satisfaction from first call to final inspection.</p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <h3 class="font-bold text-[#132043] text-lg mb-1">James Carter</h3>
+            <p class="text-[#2563eb] font-semibold text-sm mb-3">Lead Technician</p>
+            <p class="text-gray-600 text-sm leading-relaxed">A certified waterproofing specialist, James has been with us for over a decade. His meticulous attention to detail and commitment to excellence make him an invaluable asset to every job we take on.</p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <h3 class="font-bold text-[#132043] text-lg mb-1">Emily Davis</h3>
+            <p class="text-[#2563eb] font-semibold text-sm mb-3">Customer Relations</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Emily is the friendly voice our customers hear when they call. She is dedicated to understanding and addressing the unique needs of each client, ensuring a positive experience from start to finish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="bg-[#132043] py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tighter mb-6">Where We Serve</h2>
+            <p class="text-white/75 text-lg leading-relaxed mb-6">
+              Basement Waterproofing Chattanooga proudly serves the entire Chattanooga region, from bustling downtown districts to quieter suburban areas. Whether it's a private home or a commercial property, our team ensures that clients across the area benefit from top-quality waterproofing solutions.
+            </p>
+            <a href="#contact" class="inline-block bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg transition-colors active:scale-[0.98]">
+              Get a Free Estimate
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white/10 rounded-xl p-5 border border-white/20">
+              <h3 class="text-white font-bold mb-1">Downtown Chattanooga</h3>
+              <p class="text-white/60 text-sm">Full residential &amp; commercial coverage</p>
+            </div>
+            <div class="bg-white/10 rounded-xl p-5 border border-white/20">
+              <h3 class="text-white font-bold mb-1">East Brainerd</h3>
+              <p class="text-white/60 text-sm">Basement &amp; crawl space specialists</p>
+            </div>
+            <div class="bg-white/10 rounded-xl p-5 border border-white/20">
+              <h3 class="text-white font-bold mb-1">Hixson</h3>
+              <p class="text-white/60 text-sm">Foundation repair &amp; waterproofing</p>
+            </div>
+            <div class="bg-white/10 rounded-xl p-5 border border-white/20">
+              <h3 class="text-white font-bold mb-1">Soddy-Daisy</h3>
+              <p class="text-white/60 text-sm">Mold remediation &amp; drainage</p>
+            </div>
+            <div class="bg-white/10 rounded-xl p-5 border border-white/20">
+              <h3 class="text-white font-bold mb-1">Red Bank</h3>
+              <p class="text-white/60 text-sm">Interior &amp; exterior waterproofing</p>
+            </div>
+            <div class="bg-white/10 rounded-xl p-5 border border-white/20">
+              <h3 class="text-white font-bold mb-1">&amp; Surrounding Areas</h3>
+              <p class="text-white/60 text-sm">Call to confirm your area</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20" style="background-color: #0d1730;">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+
+          <div class="pt-2">
+            <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-6">Get Your Free Estimate</h2>
+            <p class="text-white/70 text-lg leading-relaxed mb-8">
+              Ready to solve your water problem for good? Fill out the form and we'll be in touch within one business day. No obligation, no pressure.
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-white/80">Free, no-obligation consultations</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-white/80">Transparent pricing, no hidden fees</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-white/80">100% satisfaction guaranteed</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-white/80">Serving all of Chattanooga &amp; surrounding areas</span>
+              </div>
+            </div>
+            <div class="mt-10 pt-8 border-t border-white/20">
+              <p class="text-white/50 text-sm mb-2">Prefer to call?</p>
+              <a href="tel:8653702211" class="text-white font-bold text-2xl hover:text-[#93c5fd] transition-colors">(865) 370-2211</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-xl">
+            <h3 class="text-xl font-bold text-[#132043] mb-6">Tell Us About Your Project</h3>
+            <form id="contact-form" class="flex flex-col gap-5" novalidate>
+              <input type="text" name="_hp" class="hidden" tabindex="-1" autocomplete="off" />
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="firstName" class="block text-sm font-semibold text-[#132043] mb-1.5">First Name <span class="text-red-500">*</span></label>
+                  <input type="text" id="firstName" name="firstName" required
+                    class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition"
+                    placeholder="Mike" />
+                </div>
+                <div>
+                  <label for="lastName" class="block text-sm font-semibold text-[#132043] mb-1.5">Last Name <span class="text-red-500">*</span></label>
+                  <input type="text" id="lastName" name="lastName" required
+                    class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition"
+                    placeholder="Thompson" />
+                </div>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-semibold text-[#132043] mb-1.5">Email <span class="text-red-500">*</span></label>
+                <input type="email" id="email" name="email" required
+                  class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition"
+                  placeholder="mike@example.com" />
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-[#132043] mb-1.5">Phone <span class="text-red-500">*</span></label>
+                <input type="tel" id="phone" name="phone" required
+                  class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition"
+                  placeholder="(865) 555-0123" />
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-semibold text-[#132043] mb-1.5">Tell Us About Your Project</label>
+                <textarea id="message" name="message" rows="4"
+                  class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition resize-none"
+                  placeholder="Describe the issue — damp basement, crawl space moisture, cracks in foundation..."></textarea>
+              </div>
+
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAADLoAKoG-gOkkr1j" data-appearance="interaction-only"></div>
+
+              <div id="form-success" class="hidden bg-green-50 border border-green-200 text-green-800 rounded-lg px-4 py-3 text-sm font-medium">
+                ✓ Thanks! We'll be in touch within one business day.
+              </div>
+              <div id="form-error" class="hidden bg-red-50 border border-red-200 text-red-800 rounded-lg px-4 py-3 text-sm">
+                Something went wrong. Please call us at (865) 370-2211.
+              </div>
+
+              <button type="submit" id="form-submit"
+                class="w-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold py-4 rounded-lg transition-colors active:scale-[0.98] text-base">
+                Request My Free Estimate
+              </button>
+
+              <p class="text-gray-400 text-xs text-center">No spam. No obligation. We respect your privacy.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+
+  <script is:inline>
+    (function () {
+      var form = document.getElementById('contact-form');
+      var submitBtn = document.getElementById('form-submit');
+      var successMsg = document.getElementById('form-success');
+      var errorMsg = document.getElementById('form-error');
+
+      if (!form) return;
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        successMsg.classList.add('hidden');
+        errorMsg.classList.add('hidden');
+
+        var turnstileToken = form.querySelector('[name="cf-turnstile-response"]')?.value || '';
+
+        var payload = {
+          firstName: form.querySelector('#firstName')?.value || '',
+          lastName: form.querySelector('#lastName')?.value || '',
+          email: form.querySelector('#email')?.value || '',
+          phone: form.querySelector('#phone')?.value || '',
+          message: form.querySelector('#message')?.value || '',
+          _hp: form.querySelector('[name="_hp"]')?.value || '',
+          turnstileToken: turnstileToken,
+        };
+
+        try {
+          var res = await fetch('/api/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          });
+          var result = await res.json();
+          if (result.status === 'success') {
+            successMsg.classList.remove('hidden');
+            form.reset();
+            if (window.turnstile) window.turnstile.reset();
+          } else {
+            errorMsg.classList.remove('hidden');
+            if (window.turnstile) window.turnstile.reset();
+          }
+        } catch (err) {
+          errorMsg.classList.remove('hidden');
+          if (window.turnstile) window.turnstile.reset();
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Request My Free Estimate';
+        }
+      });
+    })();
+  </script>
+</BaseLayout>

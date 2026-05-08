@@ -1,0 +1,429 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "Service"],
+  "name": "Basement Waterproofing Chattanooga",
+  "serviceType": "Basement Waterproofing",
+  "telephone": "+18653702211",
+  "url": "https://basementwaterproofingchattanooga.com/services/basement-waterproofing/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chattanooga",
+    "addressRegion": "TN",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
+};
+---
+<BaseLayout
+  title="Basement Waterproofing in Chattanooga, TN | Basement Waterproofing Chattanooga"
+  description="Expert basement waterproofing services in Chattanooga, TN. Interior and exterior solutions, sump pump installation, drainage systems. Free estimates. Call (865) 370-2211."
+  schema={schema}
+>
+  <Header />
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section
+      class="relative min-h-[60dvh] flex items-center"
+      style="background-image: url('/images/hero-basement-waterproofing.webp'); background-size: cover; background-position: top;"
+    >
+      <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(0,0,0,0.50), rgba(0,0,0,0.25));"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 py-16 w-full">
+        <div class="max-w-2xl">
+          <p class="text-white/90 text-sm font-semibold uppercase tracking-widest mb-4" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.65);">Expert Waterproofing Services in Chattanooga</p>
+          <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tighter leading-none mb-6" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.75);">
+            Basement Waterproofing in Chattanooga, TN
+          </h1>
+          <p class="text-white/75 text-lg leading-relaxed mb-8 max-w-[55ch]" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.65);">
+            Reliable, long-lasting waterproofing solutions that keep your basement dry through every Tennessee rainy season.
+          </p>
+          <a href="#contact" class="inline-block bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-4 rounded-lg transition-colors active:scale-[0.98]">
+            Get a Free Estimate
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-6">Why Is Basement Waterproofing Essential?</h2>
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              Water intrusion in your basement can lead to serious issues, including structural damage, mold growth, and loss of valuable living space. Addressing these problems promptly is crucial to maintaining the integrity and safety of your home.
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed">
+              Our expert waterproofing services are designed to prevent these issues, ensuring your basement remains a safe and usable part of your home — no matter how much rain Tennessee throws at it.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-[#132043] mb-5">Signs You Need Basement Waterproofing</h3>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#132043]">Persistent Dampness</p>
+                  <p class="text-gray-600 text-sm leading-relaxed">If your basement consistently feels damp or musty, it may be time to consider waterproofing.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#132043]">Water Stains</p>
+                  <p class="text-gray-600 text-sm leading-relaxed">Noticeable stains on walls or floors indicate water is seeping in.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#132043]">Mold or Mildew</p>
+                  <p class="text-gray-600 text-sm leading-relaxed">The presence of mold or mildew is a clear sign of moisture issues that need immediate attention.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-[#132043]">Cracks in Walls or Floors</p>
+                  <p class="text-gray-600 text-sm leading-relaxed">These can be pathways for water intrusion and should be addressed immediately before they worsen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interior Solutions -->
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-4">Interior Waterproofing Solutions</h2>
+          <p class="text-gray-600 text-lg leading-relaxed max-w-[65ch]">
+            Our interior waterproofing methods manage water that has already entered your basement, providing reliable protection from the inside out.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center mb-5">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-[#132043] text-lg mb-3">Sealants &amp; Epoxy Injections</h3>
+            <p class="text-gray-600 leading-relaxed">Used to fill cracks and prevent water from seeping through walls and floors, stopping intrusion at its source.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center mb-5">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-[#132043] text-lg mb-3">Interior Drainage Systems</h3>
+            <p class="text-gray-600 leading-relaxed">Installed along the perimeter of your basement to channel water away from your foundation before it causes damage.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-[#2563eb]/10 rounded-full flex items-center justify-center mb-5">
+              <svg class="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-[#132043] text-lg mb-3">Sump Pump Installation</h3>
+            <p class="text-gray-600 leading-relaxed">A reliable way to remove accumulated water from your basement, keeping it dry even during heavy rains and flooding events.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exterior Solutions -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#132043] tracking-tighter mb-6">Exterior Waterproofing Solutions</h2>
+            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+              Prevent water from entering your basement in the first place. Our exterior waterproofing services address the root cause by creating a barrier between your foundation and the surrounding soil.
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed">
+              These methods are especially effective for homes with persistent seepage problems or where interior solutions alone aren't enough to stop water at its source.
+            </p>
+          </div>
+          <div class="flex flex-col gap-6">
+            <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-6 border border-gray-100">
+              <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-[#132043] mb-1">Excavation &amp; Membrane Installation</p>
+                <p class="text-gray-600 text-sm leading-relaxed">We excavate around your foundation and apply a waterproof membrane to block water entry at the wall surface.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-6 border border-gray-100">
+              <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-[#132043] mb-1">French Drains</p>
+                <p class="text-gray-600 text-sm leading-relaxed">Installed to redirect surface and subsurface water away from your home's foundation before it can saturate the soil.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-6 border border-gray-100">
+              <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-[#132043] mb-1">Downspout Extensions</p>
+                <p class="text-gray-600 text-sm leading-relaxed">Ensures roof water is directed far from your foundation, reducing the risk of seepage around the perimeter of your home.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Strip -->
+    <section class="bg-[#132043] py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tighter mb-10 text-center">Why Chattanooga Homeowners Choose Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg mb-1">15+ Years of Local Experience</h3>
+              <p class="text-white/70 leading-relaxed">We've worked on hundreds of Chattanooga homes and understand the region's soil, water table, and seasonal patterns that drive moisture problems.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg mb-1">Precision Diagnostics, Not Guesswork</h3>
+              <p class="text-white/70 leading-relaxed">Every job starts with a thorough inspection. We identify the root cause before recommending any work — and we only recommend what you actually need.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg mb-1">Transparent Pricing, No Surprises</h3>
+              <p class="text-white/70 leading-relaxed">You get a detailed written estimate before work begins. No hidden fees, no upsells, no pressure — just honest work at a fair price.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-6 h-6 bg-[#2563eb] rounded-full flex items-center justify-center mt-0.5">
+              <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg mb-1">100% Satisfaction Guarantee</h3>
+              <p class="text-white/70 leading-relaxed">We stand behind every job. If the problem returns, so do we — at no additional cost.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#132043] py-20" style="background-color: #0d1730;">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+
+          <!-- Left: headline + trust signals -->
+          <div class="pt-2">
+            <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-6">Get Your Free Estimate</h2>
+            <p class="text-white/70 text-lg leading-relaxed mb-8">
+              Ready to solve your water problem for good? Fill out the form and we'll be in touch within one business day. No obligation, no pressure.
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-white/80">Free, no-obligation consultations</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-white/80">Transparent pricing, no hidden fees</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-white/80">100% satisfaction guaranteed</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 bg-[#2563eb] rounded-full flex-shrink-0 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-white/80">Serving all of Chattanooga &amp; surrounding areas</span>
+              </div>
+            </div>
+            <div class="mt-10 pt-8 border-t border-white/20">
+              <p class="text-white/50 text-sm mb-2">Prefer to call?</p>
+              <a href="tel:8653702211" class="text-white font-bold text-2xl hover:text-[#93c5fd] transition-colors">(865) 370-2211</a>
+            </div>
+          </div>
+
+          <!-- Right: contact form -->
+          <div class="bg-white rounded-2xl p-8 shadow-xl">
+            <h3 class="text-xl font-bold text-[#132043] mb-6">Tell Us About Your Project</h3>
+            <form id="contact-form" class="flex flex-col gap-5" novalidate>
+              <!-- Honeypot -->
+              <input type="text" name="_hp" class="hidden" tabindex="-1" autocomplete="off" />
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="firstName" class="block text-sm font-semibold text-[#132043] mb-1.5">First Name <span class="text-red-500">*</span></label>
+                  <input type="text" id="firstName" name="firstName" required
+                    class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition"
+                    placeholder="Mike" />
+                </div>
+                <div>
+                  <label for="lastName" class="block text-sm font-semibold text-[#132043] mb-1.5">Last Name <span class="text-red-500">*</span></label>
+                  <input type="text" id="lastName" name="lastName" required
+                    class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition"
+                    placeholder="Thompson" />
+                </div>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-semibold text-[#132043] mb-1.5">Email <span class="text-red-500">*</span></label>
+                <input type="email" id="email" name="email" required
+                  class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition"
+                  placeholder="mike@example.com" />
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-[#132043] mb-1.5">Phone <span class="text-red-500">*</span></label>
+                <input type="tel" id="phone" name="phone" required
+                  class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition"
+                  placeholder="(865) 555-0123" />
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-semibold text-[#132043] mb-1.5">Tell Us About Your Project</label>
+                <textarea id="message" name="message" rows="4"
+                  class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent transition resize-none"
+                  placeholder="Describe the issue — damp basement, crawl space moisture, cracks in foundation..."></textarea>
+              </div>
+
+              <!-- Turnstile widget (invisible) -->
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAADLoAKoG-gOkkr1j" data-appearance="interaction-only"></div>
+
+              <!-- Status messages -->
+              <div id="form-success" class="hidden bg-green-50 border border-green-200 text-green-800 rounded-lg px-4 py-3 text-sm font-medium">
+                ✓ Thanks! We'll be in touch within one business day.
+              </div>
+              <div id="form-error" class="hidden bg-red-50 border border-red-200 text-red-800 rounded-lg px-4 py-3 text-sm">
+                Something went wrong. Please call us at (865) 370-2211.
+              </div>
+
+              <button type="submit" id="form-submit"
+                class="w-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold py-4 rounded-lg transition-colors active:scale-[0.98] text-base">
+                Request My Free Estimate
+              </button>
+
+              <p class="text-gray-400 text-xs text-center">No spam. No obligation. We respect your privacy.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+
+  <script is:inline>
+    (function () {
+      var form = document.getElementById('contact-form');
+      var submitBtn = document.getElementById('form-submit');
+      var successMsg = document.getElementById('form-success');
+      var errorMsg = document.getElementById('form-error');
+
+      if (!form) return;
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        successMsg.classList.add('hidden');
+        errorMsg.classList.add('hidden');
+
+        var turnstileToken = form.querySelector('[name="cf-turnstile-response"]')?.value || '';
+
+        var payload = {
+          firstName: form.querySelector('#firstName')?.value || '',
+          lastName: form.querySelector('#lastName')?.value || '',
+          email: form.querySelector('#email')?.value || '',
+          phone: form.querySelector('#phone')?.value || '',
+          message: form.querySelector('#message')?.value || '',
+          _hp: form.querySelector('[name="_hp"]')?.value || '',
+          turnstileToken: turnstileToken,
+        };
+
+        try {
+          var res = await fetch('/api/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          });
+          var result = await res.json();
+          if (result.status === 'success') {
+            successMsg.classList.remove('hidden');
+            form.reset();
+            if (window.turnstile) window.turnstile.reset();
+          } else {
+            errorMsg.classList.remove('hidden');
+            if (window.turnstile) window.turnstile.reset();
+          }
+        } catch (err) {
+          errorMsg.classList.remove('hidden');
+          if (window.turnstile) window.turnstile.reset();
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Request My Free Estimate';
+        }
+      });
+    })();
+  </script>
+</BaseLayout>
