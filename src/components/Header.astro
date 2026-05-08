@@ -12,9 +12,25 @@
 
   <!-- Main nav -->
   <nav class="max-w-7xl mx-auto px-4 py-4">
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between gap-4">
+
+      <!-- Mobile: hamburger left (hidden on desktop) -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden flex-shrink-0 p-2 -ml-2 text-white"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
       <!-- Logo -->
-      <a href="/" class="flex items-center">
+      <a href="/" class="flex items-center flex-shrink-0">
         <img
           src="/images/logo.webp"
           alt="Basement Waterproofing Chattanooga"
@@ -25,8 +41,8 @@
         />
       </a>
 
-      <!-- Desktop nav -->
-      <div class="hidden md:flex items-center gap-8">
+      <!-- Desktop nav links (hidden on mobile) -->
+      <div class="hidden md:flex items-center gap-8 flex-1 justify-center">
         <a href="/" class="text-white/80 hover:text-white font-medium transition-colors text-sm">Home</a>
 
         <!-- Services dropdown -->
@@ -49,27 +65,20 @@
 
         <a href="/about/" class="text-white/80 hover:text-white font-medium transition-colors text-sm">About</a>
         <a href="/#contact" class="text-white/80 hover:text-white font-medium transition-colors text-sm">Contact</a>
-
-        <a href="/#contact" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors active:scale-[0.98]">
-          Get a Free Quote
-        </a>
       </div>
 
-      <!-- Mobile hamburger (CSS-only) -->
-      <label for="mobile-menu-toggle" class="md:hidden cursor-pointer p-2">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </label>
+      <!-- CTA — always visible on both mobile and desktop -->
+      <a href="/#contact" class="flex-shrink-0 bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold text-sm px-4 py-2.5 md:px-5 md:py-2.5 rounded-lg transition-colors active:scale-[0.98] whitespace-nowrap">
+        Get a Free Quote
+      </a>
     </div>
 
-    <!-- Mobile menu -->
-    <input type="checkbox" id="mobile-menu-toggle" class="hidden peer" />
-    <div class="hidden peer-checked:block md:hidden mt-4 border-t border-white/20 pt-4 pb-2">
+    <!-- Mobile dropdown menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 border-t border-white/20 pt-4 pb-2">
       <div class="flex flex-col gap-1">
         <a href="/" class="text-white/80 hover:text-white font-medium py-2 text-sm transition-colors">Home</a>
         <div class="py-1">
-          <p class="text-white/50 text-xs uppercase tracking-widest mb-2 px-0">Services</p>
+          <p class="text-white/50 text-xs uppercase tracking-widest mb-2">Services</p>
           <a href="/services/basement-waterproofing/" class="block text-white/80 hover:text-white font-medium py-1.5 pl-3 text-sm transition-colors">Basement Waterproofing</a>
           <a href="/services/crawl-space-waterproofing/" class="block text-white/80 hover:text-white font-medium py-1.5 pl-3 text-sm transition-colors">Crawl Space Waterproofing</a>
           <a href="/services/mold-remediation/" class="block text-white/80 hover:text-white font-medium py-1.5 pl-3 text-sm transition-colors">Mold Remediation</a>
@@ -77,10 +86,50 @@
         </div>
         <a href="/about/" class="text-white/80 hover:text-white font-medium py-2 text-sm transition-colors">About</a>
         <a href="/#contact" class="text-white/80 hover:text-white font-medium py-2 text-sm transition-colors">Contact</a>
-        <a href="/#contact" class="mt-3 bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold text-sm px-5 py-3 rounded-lg text-center transition-colors">
-          Get a Free Quote
-        </a>
       </div>
     </div>
   </nav>
 </header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  function closeMenu() {
+    menu?.classList.add('hidden');
+    btn?.setAttribute('aria-expanded', 'false');
+    hamburgerIcon?.classList.remove('hidden');
+    closeIcon?.classList.add('hidden');
+  }
+
+  function openMenu() {
+    menu?.classList.remove('hidden');
+    btn?.setAttribute('aria-expanded', 'true');
+    hamburgerIcon?.classList.add('hidden');
+    closeIcon?.classList.remove('hidden');
+  }
+
+  btn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu?.classList.contains('hidden') ? openMenu() : closeMenu();
+  });
+
+  // Close on click outside
+  document.addEventListener('click', (e) => {
+    if (!menu?.classList.contains('hidden') && !menu?.contains(e.target as Node) && !btn?.contains(e.target as Node)) {
+      closeMenu();
+    }
+  });
+
+  // Close on scroll
+  window.addEventListener('scroll', () => {
+    if (!menu?.classList.contains('hidden')) closeMenu();
+  }, { passive: true });
+
+  // Close when a nav link is clicked
+  menu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+</script>
