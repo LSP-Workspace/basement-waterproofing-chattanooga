@@ -1,5 +1,6 @@
 const CANONICAL_HOST = "basementwaterproofingchattanooga.com";
-const REDIRECT_HOSTS = new Set([CANONICAL_HOST, `www.${CANONICAL_HOST}`]);
+const PAGES_HOST = "basement-waterproofing-chattanooga.pages.dev";
+const REDIRECT_HOSTS = new Set([CANONICAL_HOST, `www.${CANONICAL_HOST}`, PAGES_HOST]);
 
 export function onRequest(context) {
   const url = new URL(context.request.url);
