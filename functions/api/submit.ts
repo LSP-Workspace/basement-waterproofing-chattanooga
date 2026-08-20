@@ -4,6 +4,9 @@ interface Env {
   TURNSTILE_SECRET_KEY: string;
 }
 
+const FORM_SOURCE = 'Basement Waterproofing Chattanooga website - basementwaterproofingchattanooga.com';
+const FORM_TAGS = ['website-lead', 'basement-waterproofing-chattanooga'];
+
 export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   // Parse JSON body
   let data: Record<string, string>;
@@ -70,8 +73,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       lastName,
       email,
       phone,
-      source: 'Website Contact Form',
-      tags: ['website-lead'],
+      source: FORM_SOURCE,
+      tags: FORM_TAGS,
       ...(message && {
         customFields: [{ key: 'type_of_project', field_value: message }],
       }),
